@@ -8,6 +8,8 @@
             node.flatastic.post("/shouts", {shout: msg.payload});
         });
 
-        RED.nodes.registerType("send-shout", SendShout);
     }
+
+    RED.nodes.registerType("send-shout", SendShout);
+
 }

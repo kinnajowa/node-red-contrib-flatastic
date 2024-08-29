@@ -28,5 +28,8 @@
       "flatastic": "flatastic.js",
       "send shout": "send-shout.js"
     }
+  },
+  "dependencies": {
+    "ky": "^1.7.1"
   }
 }

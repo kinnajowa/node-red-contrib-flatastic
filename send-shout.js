@@ -2,9 +2,10 @@
     function SendShout(config) {
         RED.nodes.createNode(this, config);
         var node = this;
+        this.flatastic = RED.nodes.getNode(n.flatastic);
+
         node.on('input', function (msg) {
-            msg.payload = "Hello World!";
-            node.send(msg);
+            node.flatastic.post("/shouts", {shout: msg.payload});
         });
 
         RED.nodes.registerType("send shout", SendShout);

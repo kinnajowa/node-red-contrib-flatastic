@@ -32,6 +32,7 @@
     function Flatastic() {
         RED.nodes.createNode(this, config);
     }
+
     RED.nodes.registerType("flatastic", Flatastic, {
         credentials: {
             username: {type: 'text'},

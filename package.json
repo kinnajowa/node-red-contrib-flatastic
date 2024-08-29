@@ -26,7 +26,7 @@
   "node-red": {
     "nodes": {
       "flatastic": "flatastic.js",
-      "send shout": "send-shout.js"
+      "send-shout": "send-shout.js"
     }
   },
   "dependencies": {
